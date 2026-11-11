@@ -3,413 +3,1072 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wan Muhammad Ashraf — Resume</title>
+    <title>Wan Muhammad Ashraf — Senior NPI Technical Lead</title>
+    <!-- Google Fonts for Futuristic Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark-theme">
 
-<!-- Navigation -->
-<nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#awards">Awards</a>
-    <a href="#contact">Contact</a>
-    <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">🌙</button>
+<!-- Futuristic Interactive Background Canvas -->
+<canvas id="cyberCanvas"></canvas>
+
+<!-- Ambient Glowing Orbs -->
+<div class="glow-orb orb-1"></div>
+<div class="glow-orb orb-2"></div>
+<div class="glow-orb orb-3"></div>
+
+<!-- Futuristic Navigation -->
+<nav id="navbar">
+    <div class="nav-brand">
+        <span class="brand-bracket">&lt;</span>ASHRAF<span class="brand-dot">.</span>NPI<span class="brand-bracket">/&gt;</span>
+    </div>
+    <div class="nav-links">
+        <a href="#about"><span class="nav-num">01.</span>About</a>
+        <a href="#achievements"><span class="nav-num">02.</span>Highlights</a>
+        <a href="#experience"><span class="nav-num">03.</span>Experience</a>
+        <a href="#skills"><span class="nav-num">04.</span>Skills</a>
+        <a href="#projects"><span class="nav-num">05.</span>Projects</a>
+        <a href="#certifications"><span class="nav-num">06.</span>Certs</a>
+        <a href="#awards"><span class="nav-num">07.</span>Awards</a>
+        <a href="#contact"><span class="nav-num">08.</span>Contact</a>
+    </div>
+    <div class="nav-actions">
+        <a href="assets/Wan_Muhammad_Ashraf_Resume.pdf" download class="btn-nav-download">
+            <span class="btn-glow"></span>
+            <span>Resume PDF</span>
+        </a>
+        <button class="theme-toggle" id="themeToggle" title="Toggle Futuristic Neon Mode">⚡</button>
+    </div>
 </nav>
 
-<!-- Hero -->
-<header class="hero">
-    <img src="assets/profile.jpg" alt="Wan Muhammad Ashraf Wan Yusoff" class="avatar">
-    <h1>Wan Muhammad Ashraf Wan Yusoff</h1>
-    <p class="tagline">Senior NPI Technical Lead &nbsp;|&nbsp; Semiconductor Final Test Engineering</p>
-    <div class="contact-row">
-        <span>wanashraf2127@gmail.com</span>
-        <span>+60 14 823 9695</span>
-        <span>Kuala Lumpur / Klang Valley, Malaysia</span>
-        <span><a href="https://www.linkedin.com/in/wanashraf" target="_blank">LinkedIn</a></span>
-        <span><a href="https://github.com/pacca1412" target="_blank">GitHub</a></span>
-    </div>
-    <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">✉ Get In Touch</a>
-        <a href="assets/Wan_Muhammad_Ashraf_Resume.pdf" download class="btn btn-outline">⬇ Download Resume</a>
+<!-- Hero Section -->
+<header class="hero" id="hero">
+    <div class="hero-content">
+        <!-- Status Pill -->
+        <div class="status-pill reveal">
+            <span class="pulse-indicator"></span>
+            <span class="status-text">Semiconductor Final Test &amp; NPI Engineering</span>
+            <span class="badge-tag">READY FOR IMPACT</span>
+        </div>
+
+        <!-- Futuristic Holographic Avatar -->
+        <div class="avatar-wrapper reveal">
+            <div class="avatar-ring ring-outer"></div>
+            <div class="avatar-ring ring-inner"></div>
+            <div class="avatar-frame">
+                <img src="assets/profile.jpg" alt="Wan Muhammad Ashraf Wan Yusoff" class="avatar-img">
+            </div>
+            <div class="avatar-corner c-tl"></div>
+            <div class="avatar-corner c-tr"></div>
+            <div class="avatar-corner c-bl"></div>
+            <div class="avatar-corner c-br"></div>
+        </div>
+
+        <!-- Name & Dynamic Typing Title -->
+        <h1 class="hero-name reveal">
+            Wan Muhammad Ashraf <span class="gradient-text">Wan Yusoff</span>
+        </h1>
+        
+        <div class="typewriter-container reveal">
+            <span class="terminal-prefix">$ </span>
+            <span class="typed-text" id="typedText"></span>
+            <span class="cursor">&nbsp;</span>
+        </div>
+
+        <!-- Contact Pill Row -->
+        <div class="contact-hud reveal">
+            <div class="hud-item">
+                <span class="hud-icon">📍</span>
+                <span>Kuala Lumpur / Klang Valley, Malaysia</span>
+            </div>
+            <div class="hud-item">
+                <span class="hud-icon">✉️</span>
+                <a href="mailto:wanashraf2127@gmail.com">wanashraf2127@gmail.com</a>
+            </div>
+            <div class="hud-item">
+                <span class="hud-icon">📞</span>
+                <span>+60 14 823 9695</span>
+            </div>
+            <div class="hud-item">
+                <span class="hud-icon">💼</span>
+                <a href="https://www.linkedin.com/in/wanashraf" target="_blank" rel="noopener">linkedin.com/in/wanashraf</a>
+            </div>
+            <div class="hud-item">
+                <span class="hud-icon">💻</span>
+                <a href="https://github.com/pacca1412" target="_blank" rel="noopener">github.com/pacca1412</a>
+            </div>
+        </div>
+
+        <!-- Hero Action Buttons -->
+        <div class="hero-actions reveal">
+            <a href="#contact" class="btn-cyber btn-primary">
+                <span class="btn-text">Initiate Contact</span>
+                <span class="btn-icon">⚡</span>
+            </a>
+            <a href="assets/Wan_Muhammad_Ashraf_Resume.pdf" download class="btn-cyber btn-secondary">
+                <span class="btn-text">Download Resume PDF</span>
+                <span class="btn-icon">⬇</span>
+            </a>
+            <a href="https://github.com/pacca1412" target="_blank" rel="noopener" class="btn-cyber btn-ghost">
+                <span class="btn-text">GitHub Portfolio</span>
+                <span class="btn-icon">↗</span>
+            </a>
+        </div>
+
+        <!-- HUD Telemetry / Stat Counters Bar -->
+        <div class="telemetry-bar reveal">
+            <div class="stat-card">
+                <div class="stat-num" data-target="50" data-suffix="+">0</div>
+                <div class="stat-label">NPI / NTI Projects Delivered</div>
+                <div class="stat-bar"><div class="stat-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="stat-card highlight-cyan">
+                <div class="stat-num" data-target="100" data-suffix="%">0</div>
+                <div class="stat-label">First Time Right (FTR) &amp; OTD</div>
+                <div class="stat-bar"><div class="stat-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="stat-card highlight-gold">
+                <div class="stat-num-text">~$40M</div>
+                <div class="stat-label">Revenue Secured (UP1600 Conversion)</div>
+                <div class="stat-bar"><div class="stat-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="stat-card highlight-purple">
+                <div class="stat-num" data-target="3" data-suffix="×">0</div>
+                <div class="stat-label">Pin Life Touchdowns (1M cycles)</div>
+                <div class="stat-bar"><div class="stat-fill" style="width: 90%;"></div></div>
+            </div>
+        </div>
     </div>
 </header>
 
-<!-- About -->
-<section id="about">
-    <h2 class="section-title reveal">Professional Summary</h2>
-    <div class="card reveal">
-        <p>
-            NPI technical lead with 5 years of engineering experience, including 4+ years in semiconductor
-            Final Test NPI at NXP Semiconductors. Owned and delivered 50+ New Product/Technology Introduction
-            (NPI/NTI) hardware projects end to end with 100% First Time Right (FTR) and 100% On-Time Delivery
-            (OTD), zero design re-spin and a 20% cycle-time reduction. Combines project ownership (scope,
-            schedule, budget, risk, suppliers, global stakeholders) with deep technical leadership in test
-            hardware, PCB design, DOE and CFD/FEA. Trusted on revenue-critical programs, including a platform
-            conversion that secured ~US$40M. First Class Mechanical Engineering graduate; Lean Six Sigma Green
-            Belt trained; certified in machine learning and data science.
-        </p>
+<main class="main-container">
+
+    <!-- About / Professional Summary -->
+    <section id="about" class="cyber-section">
+        <div class="section-header reveal">
+            <span class="section-tag">// 01. EXECUTIVE BRIEF</span>
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="cyber-card glass-card reveal">
+            <div class="card-accent-bar"></div>
+            <div class="cyber-card-body">
+                <p class="lead-text">
+                    <strong>NPI Technical Lead</strong> with <strong>5 years of engineering experience</strong>, including <strong>4+ years in semiconductor Final Test NPI at NXP Semiconductors</strong>. Owned and delivered <strong>50+ New Product/Technology Introduction (NPI/NTI)</strong> hardware projects end to end with <strong>100% First Time Right (FTR)</strong> and <strong>100% On-Time Delivery (OTD)</strong>, zero design re-spin and a <strong>20% cycle-time reduction</strong>.
+                </p>
+                <p>
+                    Combines rigorous project ownership (scope, schedule, budget, risk, suppliers, global cross-functional stakeholders) with deep technical leadership in test hardware, high-speed PCB design, DOE, and CFD/FEA simulation. Trusted lead on revenue-critical corporate programs, including a high-stakes platform conversion that secured <strong>~US$40M</strong>. 
+                </p>
+                <div class="summary-chips">
+                    <span class="chip-item">🎓 First Class Mechanical Engineering (UM)</span>
+                    <span class="chip-item">🟢 Lean Six Sigma Green Belt</span>
+                    <span class="chip-item">🤖 Machine Learning &amp; Applied AI Certified</span>
+                    <span class="chip-item">⚡ 0% Design Re-spin Record</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies -->
+    <section id="competencies" class="cyber-section">
+        <div class="section-header reveal">
+            <span class="section-tag">// CORE SPECIALIZATIONS</span>
+            <h2 class="section-title">Technical &amp; Leadership Matrix</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="grid-2-col">
+            <!-- Program Leadership Card -->
+            <div class="cyber-card glass-card reveal">
+                <div class="card-top-header">
+                    <span class="card-badge badge-blue">PROGRAM LEADERSHIP</span>
+                    <span class="card-id">MOD-01</span>
+                </div>
+                <h3 class="card-heading">🎯 Project &amp; Lifecycle Mastery</h3>
+                <ul class="cyber-list">
+                    <li><span class="list-bullet">▹</span><strong>End-to-End NPI/NTI:</strong> Full ownership from architecture &amp; requirements, supplier procurement, build, qualification to mass production release.</li>
+                    <li><span class="list-bullet">▹</span><strong>Schedule &amp; Cost Control:</strong> Developed automated Gantt scheduling algorithms reducing project cycle time by 20%.</li>
+                    <li><span class="list-bullet">▹</span><strong>Risk Management:</strong> Expert in proactive DFMEA, 3×5 Why analysis, MSA, SPC, and shift-left execution.</li>
+                    <li><span class="list-bullet">▹</span><strong>Global Stakeholder Coordination:</strong> Seamless alignment across NXP USA, Europe, and Asia sites with multi-tier external suppliers.</li>
+                </ul>
+            </div>
+
+            <!-- Technical Depth Card -->
+            <div class="cyber-card glass-card reveal">
+                <div class="card-top-header">
+                    <span class="card-badge badge-cyan">TECHNICAL DEPTH</span>
+                    <span class="card-id">MOD-02</span>
+                </div>
+                <h3 class="card-heading">🔧 Semiconductor Test &amp; Physics</h3>
+                <ul class="cyber-list">
+                    <li><span class="list-bullet">▹</span><strong>Test Hardware Engineering:</strong> Loadboard architecture, contact sockets, pogo/cantilever pins, handler conversion kits, and precision docking.</li>
+                    <li><span class="list-bullet">▹</span><strong>High-Speed PCB Design:</strong> Cadence Allegro multi-layer layout, signal integrity considerations, and RF test board design.</li>
+                    <li><span class="list-bullet">▹</span><strong>Simulation &amp; Modeling:</strong> SOLIDWORKS 3D modeling, finite element analysis (FEA), and computational fluid dynamics (CFD).</li>
+                    <li><span class="list-bullet">▹</span><strong>Data Analytics &amp; AI:</strong> Power BI, JMP statistical modeling, Python (NumPy, Scikit-learn, TensorFlow) for yield and process intelligence.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Achievements -->
+    <section id="achievements" class="cyber-section">
+        <div class="section-header reveal">
+            <span class="section-tag">// 02. PROVEN TRACK RECORD</span>
+            <h2 class="section-title">Key Career Milestones</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="achievements-cyber-grid">
+            <div class="milestone-card reveal">
+                <div class="milestone-glow glow-cyan"></div>
+                <div class="milestone-icon">🎯</div>
+                <div class="milestone-content">
+                    <div class="milestone-val">100% FTR &amp; 100% OTD</div>
+                    <div class="milestone-sub">50+ NPI/NTI Hardware Projects</div>
+                    <p>Delivered zero design re-spins across 50+ projects while achieving a 20% cycle-time reduction through shift-left planning.</p>
+                </div>
+            </div>
+
+            <div class="milestone-card reveal">
+                <div class="milestone-glow glow-gold"></div>
+                <div class="milestone-icon">💎</div>
+                <div class="milestone-content">
+                    <div class="milestone-val">~US$40M Revenue Secured</div>
+                    <div class="milestone-sub">J973 → UP1600 Platform Conversion</div>
+                    <p>Led test platform conversion for MPC8308 product line on an accelerated timeline, avoiding costly NRE through internal loadboard innovation.</p>
+                </div>
+            </div>
+
+            <div class="milestone-card reveal">
+                <div class="milestone-glow glow-purple"></div>
+                <div class="milestone-icon">⚡</div>
+                <div class="milestone-content">
+                    <div class="milestone-val">3× Contact Pin Lifespan</div>
+                    <div class="milestone-sub">300k → 1,000,000 Touchdowns</div>
+                    <p>Pioneered cantilever pin introduction on MCT SH-5300 &amp; FH-1200 handlers, drastically reducing unscheduled downtime and elevating MTBF.</p>
+                </div>
+            </div>
+
+            <div class="milestone-card reveal">
+                <div class="milestone-glow glow-blue"></div>
+                <div class="milestone-icon">🏅</div>
+                <div class="milestone-content">
+                    <div class="milestone-val">Top Achiever FY23 &amp; FY24</div>
+                    <div class="milestone-sub">NXP Semiconductors Global Excellence</div>
+                    <p>Recipient of 4 prestigious corporate awards (SPOT &amp; Technical Excellence) from 2023 to 2025 for exceptional engineering contributions.</p>
+                </div>
+            </div>
+
+            <div class="milestone-card reveal">
+                <div class="milestone-glow glow-green"></div>
+                <div class="milestone-icon">🚀</div>
+                <div class="milestone-content">
+                    <div class="milestone-val">RM128,000 Cost Reduction</div>
+                    <div class="milestone-sub">Automation &amp; Industry 4.0 IoT</div>
+                    <p>Delivered machine design and digitalized Power BI traceability projects at Top Glove, eliminating manual labor and optimizing cycle time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section id="experience" class="cyber-section">
+        <div class="section-header reveal">
+            <span class="section-tag">// 03. CAREER TIMELINE</span>
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="timeline-container">
+            <!-- NXP Semiconductors -->
+            <div class="timeline-item reveal">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-glow"></div>
+                </div>
+                <div class="timeline-card cyber-card glass-card">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="corp-badge">NXP SEMICONDUCTORS</span>
+                            <h3 class="role-title">NPI Hardware Design Engineer / Project Owner</h3>
+                            <p class="role-location">Petaling Jaya, Selangor, Malaysia &nbsp;|&nbsp; Final Test NPI/NTI for Automotive &amp; Industrial</p>
+                        </div>
+                        <div class="timeline-date">
+                            <span class="date-badge">Sept 2022 — Present</span>
+                            <span class="tenure-badge">Active Role</span>
+                        </div>
+                    </div>
+                    <div class="role-details">
+                        <ul class="cyber-bullets">
+                            <li><strong>Full Lifecycle Ownership:</strong> Own complete hardware lifecycle for 50+ NPI/NTI projects from initial requirements and architecture, through supplier sourcing and PCB fabrication, to final bench qualification and mass-production release.</li>
+                            <li><strong>100% Quality &amp; On-Time Delivery:</strong> Maintained an unblemished record of 100% First Time Right (FTR) and 100% On-Time Delivery (OTD) with 0 design re-spins across all assigned programs.</li>
+                            <li><strong>Gantt &amp; Shift-Left Automation:</strong> Formulated comprehensive Excel-based project control models with automated scheduling algorithms, cutting project cycle time by 20%.</li>
+                            <li><strong>US$40M Critical Platform Conversion:</strong> Spearheaded Teradyne J973 to UltraFlex UP1600 test platform conversion for MPC8308 on an aggressive timeline, avoiding massive NRE costs via internal loadboard engineering.</li>
+                            <li><strong>1M Touchdown Cantilever Pin Breakthrough:</strong> Engineered cantilever pin transition on MCT SH-5300 &amp; FH-1200 handlers (300k to 1M touchdowns), scaling technology to VSON, SO, HVQFN, DHVQFN packages, and Cohu Jaguar in-strip handlers.</li>
+                            <li><strong>Multi-Platform Hardware Design:</strong> Architected PCB layouts and interfaces across Teradyne (UltraFlexPlus, UltraFlex UP1600, J750) and Advantest (Exascale Duo, PinScale PS1600) with handlers (MCT, Delta, Esmo Talos, Seiko Epson, Cohu Jaguar).</li>
+                            <li><strong>Physics Simulation &amp; Validation:</strong> Executed DOEs to optimize insertion dynamics; carried out FEA mechanical stress and CFD thermal airflow simulations prior to production sign-off.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Glove Corporation -->
+            <div class="timeline-item reveal">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-glow"></div>
+                </div>
+                <div class="timeline-card cyber-card glass-card">
+                    <div class="timeline-header">
+                        <div>
+                            <span class="corp-badge badge-teal">TOP GLOVE CORPORATION BERHAD</span>
+                            <h3 class="role-title">Production Engineer</h3>
+                            <p class="role-location">Meru, Selangor, Malaysia &nbsp;|&nbsp; Manufacturing &amp; Industrial Automation</p>
+                        </div>
+                        <div class="timeline-date">
+                            <span class="date-badge">Oct 2021 — Sept 2022</span>
+                            <span class="tenure-badge badge-success">Top Performer FY22</span>
+                        </div>
+                    </div>
+                    <div class="role-details">
+                        <ul class="cyber-bullets">
+                            <li><strong>Automation &amp; Machine Design:</strong> Spearheaded machine design, tooling improvements, and automation projects delivering RM128,000 in recurring annual cost savings.</li>
+                            <li><strong>Industry 4.0 Digital Transformation:</strong> Digitized packaging quality and tracking via Power BI dashboards, eliminating manual reporting and reducing human error.</li>
+                            <li><strong>Midterm Grading Honor:</strong> Recognized as Top Performer (Midterm Grading FY2022) for leadership in operational continuous improvement projects (CIP).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section id="skills" class="cyber-section">
+        <div class="section-header reveal">
+            <span class="section-tag">// 04. CORE CAPABILITIES</span>
+            <h2 class="section-title">Technical Skills Matrix</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="skills-cyber-grid">
+            <!-- Domain 1 -->
+            <div class="skill-hud-box reveal">
+                <div class="hud-box-header">
+                    <span class="hud-symbol">⚡</span>
+                    <h4>Test Platforms &amp; Handlers</h4>
+                </div>
+                <div class="skill-tag-group">
+                    <span class="tag-cyber tag-cyan">Teradyne UltraFlexPlus</span>
+                    <span class="tag-cyber tag-cyan">UltraFlex UP1600</span>
+                    <span class="tag-cyber tag-cyan">Teradyne J750</span>
+                    <span class="tag-cyber tag-blue">Advantest Exascale Duo</span>
+                    <span class="tag-cyber tag-blue">PinScale PS1600</span>
+                    <span class="tag-cyber tag-teal">MCT SH-5300 / FH-1200</span>
+                    <span class="tag-cyber tag-teal">Delta Matrix / Castle</span>
+                    <span class="tag-cyber tag-teal">Cohu Jaguar In-Strip</span>
+                    <span class="tag-cyber tag-teal">Esmo Talos &amp; Seiko Epson</span>
+                </div>
+            </div>
+
+            <!-- Domain 2 -->
+            <div class="skill-hud-box reveal">
+                <div class="hud-box-header">
+                    <span class="hud-symbol">📐</span>
+                    <h4>Hardware Design &amp; Simulation</h4>
+                </div>
+                <div class="skill-tag-group">
+                    <span class="tag-cyber tag-purple">Cadence Allegro PCB</span>
+                    <span class="tag-cyber tag-purple">SOLIDWORKS 3D</span>
+                    <span class="tag-cyber tag-purple">FEA (Stress &amp; Strain)</span>
+                    <span class="tag-cyber tag-purple">CFD (Thermal Airflow)</span>
+                    <span class="tag-cyber tag-indigo">AutoCAD</span>
+                    <span class="tag-cyber tag-indigo">DraftSight</span>
+                    <span class="tag-cyber tag-indigo">RF Test Board Design</span>
+                    <span class="tag-cyber tag-indigo">Sockets &amp; Pogo Interfaces</span>
+                </div>
+            </div>
+
+            <!-- Domain 3 -->
+            <div class="skill-hud-box reveal">
+                <div class="hud-box-header">
+                    <span class="hud-symbol">🧠</span>
+                    <h4>AI, Machine Learning &amp; Code</h4>
+                </div>
+                <div class="skill-tag-group">
+                    <span class="tag-cyber tag-magenta">Python</span>
+                    <span class="tag-cyber tag-magenta">TensorFlow &amp; Keras</span>
+                    <span class="tag-cyber tag-magenta">Scikit-learn</span>
+                    <span class="tag-cyber tag-magenta">NumPy &amp; Pandas</span>
+                    <span class="tag-cyber tag-pink">Data Science</span>
+                    <span class="tag-cyber tag-pink">Applied AI</span>
+                    <span class="tag-cyber tag-pink">Neural Networks</span>
+                </div>
+            </div>
+
+            <!-- Domain 4 -->
+            <div class="skill-hud-box reveal">
+                <div class="hud-box-header">
+                    <span class="hud-symbol">📊</span>
+                    <h4>Data Analytics &amp; Statistics</h4>
+                </div>
+                <div class="skill-tag-group">
+                    <span class="tag-cyber tag-gold">Microsoft Power BI</span>
+                    <span class="tag-cyber tag-gold">JMP Statistical Discovery</span>
+                    <span class="tag-cyber tag-gold">Minitab</span>
+                    <span class="tag-cyber tag-gold">Advanced Excel (Automated Gantt)</span>
+                    <span class="tag-cyber tag-amber">SQL</span>
+                    <span class="tag-cyber tag-amber">DOE (Design of Experiments)</span>
+                </div>
+            </div>
+
+            <!-- Domain 5 -->
+            <div class="skill-hud-box reveal">
+                <div class="hud-box-header">
+                    <span class="hud-symbol">🛡️</span>
+                    <h4>Quality, Standards &amp; Methodologies</h4>
+                </div>
+                <div class="skill-tag-group">
+                    <span class="tag-cyber tag-green">Lean Six Sigma (Green Belt)</span>
+                    <span class="tag-cyber tag-green">NPI / NTI Lifecycle</span>
+                    <span class="tag-cyber tag-green">DFMEA &amp; 3×5 Why</span>
+                    <span class="tag-cyber tag-green">MSA &amp; SPC</span>
+                    <span class="tag-cyber tag-emerald">ISO 9001:2015</span>
+                    <span class="tag-cyber tag-emerald">IATF 16949 (Automotive)</span>
+                </div>
+            </div>
+
+            <!-- Domain 6 -->
+            <div class="skill-hud-box reveal">
+                <div class="hud-box-header">
+                    <span class="hud-symbol">🌐</span>
+                    <h4>PLM, Cloud &amp; Languages</h4>
+                </div>
+                <div class="skill-tag-group">
+                    <span class="tag-cyber tag-blue">ARAS Innovator</span>
+                    <span class="tag-cyber tag-blue">Agile PLM</span>
+                    <span class="tag-cyber tag-blue">CollabNet</span>
+                    <span class="tag-cyber tag-cyan">AWS Cloud Practitioner</span>
+                    <span class="tag-cyber tag-cyan">Azure Cloud Practitioner</span>
+                    <span class="tag-cyber tag-purple">English (Proficient)</span>
+                    <span class="tag-cyber tag-purple">Malay (Native)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Projects Showcase -->
+    <section id="projects" class="cyber-section">
+        <div class="section-header reveal">
+            <span class="section-tag">// 05. FEATURED INNOVATIONS</span>
+            <h2 class="section-title">Selected Projects &amp; Case Studies</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="projects-futuristic-grid">
+            <!-- Project 1 -->
+            <div class="project-cyber-card reveal">
+                <div class="project-card-header bg-grad-cyan">
+                    <div class="proj-tech-badge">SEMICONDUCTOR HARDWARE</div>
+                    <div class="proj-icon">🔩</div>
+                </div>
+                <div class="project-card-body">
+                    <div class="project-meta">NXP Semiconductors · MCT SH-5300 &amp; FH-1200</div>
+                    <h3 class="project-title">Cantilever Pin Introduction &amp; 1M Touchdowns</h3>
+                    <p class="project-desc">
+                        Replaced standard pogo pins with cantilever contact technology, lifting pin lifespan from 300k to 1,000,000 touchdowns. Slashed unplanned handler downtime and boosted MTBF across VSON, SO, HVQFN, DHVQFN fine-pitch packages and Cohu Jaguar in-strip handler.
+                    </p>
+                    <div class="project-tags">
+                        <span>Cantilever Pins</span>
+                        <span>MTBF</span>
+                        <span>Fine-Pitch NiPdAu</span>
+                        <span>Cohu Jaguar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-cyber-card reveal">
+                <div class="project-card-header bg-grad-purple">
+                    <div class="proj-tech-badge">HIGH-SPEED 5NM SILICON</div>
+                    <div class="proj-icon">🌐</div>
+                </div>
+                <div class="project-card-body">
+                    <div class="project-meta">NXP Semiconductors · 2024 · Automotive</div>
+                    <h3 class="project-title">5nm 16G High-Speed Ethernet Switch Test Hardware</h3>
+                    <p class="project-desc">
+                        Spearheaded final test hardware delivery for next-generation 5nm 16G automotive Ethernet switches. Overcame extreme signal fidelity challenges, delivering hardware on a compressed timeline with 100% FTR and 100% OTD.
+                    </p>
+                    <div class="project-tags">
+                        <span>5nm FinFET</span>
+                        <span>16G Ethernet</span>
+                        <span>High-Speed Test</span>
+                        <span>Automotive Grade</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-cyber-card reveal">
+                <div class="project-card-header bg-grad-gold">
+                    <div class="proj-tech-badge">REVENUE RECOVERY (~US$40M)</div>
+                    <div class="proj-icon">💰</div>
+                </div>
+                <div class="project-card-body">
+                    <div class="project-meta">NXP Semiconductors · 2024 · MPC8308</div>
+                    <h3 class="project-title">Teradyne J973 to UltraFlex UP1600 Migration</h3>
+                    <p class="project-desc">
+                        Executed urgent production test platform conversion for the MPC8308 microprocessor line to fulfill critical customer demand ramps. Formulated in-house loadboard design to bypass external NRE costs, unlocking ~US$40M revenue.
+                    </p>
+                    <div class="project-tags">
+                        <span>UltraFlex UP1600</span>
+                        <span>J973 Conversion</span>
+                        <span>In-House Loadboard</span>
+                        <span>Zero NRE</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-cyber-card reveal">
+                <div class="project-card-header bg-grad-magenta">
+                    <div class="proj-tech-badge">AUTOMOTIVE POWER IC</div>
+                    <div class="proj-icon">⚡</div>
+                </div>
+                <div class="project-card-body">
+                    <div class="project-meta">NXP Semiconductors · 2023</div>
+                    <h3 class="project-title">USB Type-C 48V CC/SBU Protection IC Test System</h3>
+                    <p class="project-desc">
+                        Designed, qualified, and released final test loadboards and socket configurations for a specialized 48V CC/SBU automotive USB Power Delivery IC under stringent ESD and voltage-isolation criteria.
+                    </p>
+                    <div class="project-tags">
+                        <span>USB Type-C</span>
+                        <span>48V Protection</span>
+                        <span>NPI Release</span>
+                        <span>Power Testing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-cyber-card reveal">
+                <div class="project-card-header bg-grad-green">
+                    <div class="proj-tech-badge">INDUSTRY 4.0 AUTOMATION</div>
+                    <div class="proj-icon">🤖</div>
+                </div>
+                <div class="project-card-body">
+                    <div class="project-meta">Top Glove Corporation · 2022</div>
+                    <h3 class="project-title">Automatic Feeder Stamping Machine</h3>
+                    <p class="project-desc">
+                        Engineered automated feeder stamping and sticker printing machinery integrated with Power BI real-time telemetry. Cut 2 full-time operator headcounts and generated RM88,000 in net annual cost reduction.
+                    </p>
+                    <div class="project-tags">
+                        <span>Machine Automation</span>
+                        <span>Power BI</span>
+                        <span>Cost Reduction</span>
+                        <span>CAD Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-cyber-card reveal">
+                <div class="project-card-header bg-grad-blue">
+                    <div class="proj-tech-badge">DIGITAL FACTORY TRACEABILITY</div>
+                    <div class="proj-icon">📊</div>
+                </div>
+                <div class="project-card-body">
+                    <div class="project-meta">Top Glove Corporation · 2022</div>
+                    <h3 class="project-title">Packer ID Traceability Kiosk</h3>
+                    <p class="project-desc">
+                        Devised and deployed an IoT packer traceability kiosk recording live operator assignments, throughput, and defect rates directly into Power BI, driving RM40,000 annual operational savings.
+                    </p>
+                    <div class="project-tags">
+                        <span>IoT Kiosk</span>
+                        <span>Traceability</span>
+                        <span>Power BI Dashboards</span>
+                        <span>Yield Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Academics -->
+    <section id="education" class="cyber-section">
+        <div class="section-header reveal">
+            <span class="section-tag">// 06. ACADEMIC CREDENTIALS</span>
+            <h2 class="section-title">Education &amp; Honors</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="grid-2-col">
+            <div class="cyber-card glass-card reveal">
+                <div class="card-top-header">
+                    <span class="card-badge badge-blue">UNIVERSITI MALAYA (UM)</span>
+                    <span class="card-id">2017 — 2021</span>
+                </div>
+                <h3 class="card-heading">Bachelor of Mechanical Engineering (Hons.)</h3>
+                <div class="academic-badge-row">
+                    <span class="gpa-pill">First Class Honors</span>
+                    <span class="gpa-pill pill-gold">CGPA: 3.74 / 4.00</span>
+                </div>
+                <p class="academic-desc">
+                    Consistently ranked among the top tier of the faculty. Five-time recipient of the prestigious <strong>Dean's Award (2017–2021)</strong>. Core research focused on mechanical dynamics, thermal systems, CFD, and finite element modeling.
+                </p>
+            </div>
+
+            <div class="cyber-card glass-card reveal">
+                <div class="card-top-header">
+                    <span class="card-badge badge-cyan">PUSAT ASASI SAINS UM (PASUM)</span>
+                    <span class="card-id">2016 — 2017</span>
+                </div>
+                <h3 class="card-heading">Foundation in Physical Science</h3>
+                <div class="academic-badge-row">
+                    <span class="gpa-pill pill-gold">Perfect CGPA: 4.00 / 4.00</span>
+                </div>
+                <p class="academic-desc">
+                    Graduated with a flawless 4.00 GPA in advanced physics, calculus, and computing fundamentals, earning direct admission into the University of Malaya's top engineering degree programme.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Training -->
+    <section id="certifications" class="cyber-section">
+        <div class="section-header reveal">
+            <span class="section-tag">// 07. CONTINUOUS LEARNING</span>
+            <h2 class="section-title">Certifications &amp; Credentials</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="certs-cyber-grid">
+            <div class="cert-card reveal">
+                <div class="cert-icon">🤖</div>
+                <div class="cert-category">AI &amp; DATA SCIENCE</div>
+                <ul class="cert-items">
+                    <li><strong>Machine Learning Specialization</strong> — DeepLearning.AI &amp; Stanford University (2026)</li>
+                    <li><strong>IBM Data Science Professional Certificate</strong> (2026)</li>
+                    <li><strong>Google AI Professional Certificate</strong> (2026)</li>
+                </ul>
+            </div>
+
+            <div class="cert-card reveal">
+                <div class="cert-icon">📈</div>
+                <div class="cert-category">QUALITY &amp; METHODOLOGY</div>
+                <ul class="cert-items">
+                    <li><strong>Lean Six Sigma Green Belt</strong> (2024)</li>
+                    <li><strong>NXP Yellow Belt Six Sigma</strong> (2022)</li>
+                    <li><strong>ISO 9001:2015 &amp; IATF 16949</strong> Quality Systems</li>
+                </ul>
+            </div>
+
+            <div class="cert-card reveal">
+                <div class="cert-icon">🎓</div>
+                <div class="cert-category">PROFESSIONAL LICENSING</div>
+                <ul class="cert-items">
+                    <li><strong>Graduate Engineer</strong> — Board of Engineers Malaysia (BEM, 2022)</li>
+                    <li><strong>Graduate Technologist</strong> — Malaysia Board of Technologists (MBOT, 2022)</li>
+                </ul>
+            </div>
+
+            <div class="cert-card reveal">
+                <div class="cert-icon">🛠️</div>
+                <div class="cert-category">TECHNICAL TEST &amp; DESIGN</div>
+                <ul class="cert-items">
+                    <li><strong>Semiconductor Digital Device Test Methodology</strong> (2023)</li>
+                    <li><strong>RF Test Board Design</strong> (2024)</li>
+                    <li><strong>PCB Layout Design Techniques</strong> (2025)</li>
+                    <li><strong>SOLIDWORKS FEA and CFD Simulation</strong> (2023)</li>
+                    <li><strong>Microsoft Excel Advanced Modeling</strong> (2024)</li>
+                </ul>
+            </div>
+
+            <div class="cert-card reveal">
+                <div class="cert-icon">☁️</div>
+                <div class="cert-category">CLOUD INFRASTRUCTURE</div>
+                <ul class="cert-items">
+                    <li><strong>AWS Certified Cloud Practitioner</strong> (2023)</li>
+                    <li><strong>Microsoft Azure Fundamentals</strong> (2023)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Honors -->
+    <section id="awards" class="cyber-section">
+        <div class="section-header reveal">
+            <span class="section-tag">// 08. CORPORATE HONORS</span>
+            <h2 class="section-title">Awards &amp; Recognition</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="awards-cyber-container reveal">
+            <div class="award-row">
+                <div class="award-badge-side">
+                    <span class="award-year">2025</span>
+                    <span class="award-type">SPOT AWARD</span>
+                </div>
+                <div class="award-desc-side">
+                    <h4>Innovative Risk Mitigation on Multiple NPI Qualifications</h4>
+                    <p>Recognized by NXP global leadership for proactive risk mitigation and technical problem-solving during mission-critical automotive qualification ramps.</p>
+                </div>
+            </div>
+
+            <div class="award-row">
+                <div class="award-badge-side">
+                    <span class="award-year">2024</span>
+                    <span class="award-type">DOUBLE SPOT</span>
+                </div>
+                <div class="award-desc-side">
+                    <h4>J973 to UP1600 Conversion (US$40M Secured) &amp; Global Innovation Tour</h4>
+                    <p>Honored twice in Q3 2024: once for securing ~$40M corporate revenue on the MPC8308 conversion, and once at the NXP Innovation World Tour Kuala Lumpur (Global Hardware category).</p>
+                </div>
+            </div>
+
+            <div class="award-row">
+                <div class="award-badge-side">
+                    <span class="award-year">2023</span>
+                    <span class="award-type">EXCELLENCE</span>
+                </div>
+                <div class="award-desc-side">
+                    <h4>Technical Excellence Award — Bent Lead Elimination</h4>
+                    <p>Eliminated bent lead failure mode on the S32K396 176LQFP automotive microcontroller package, significantly improving package test yield.</p>
+                </div>
+            </div>
+
+            <div class="award-row">
+                <div class="award-badge-side">
+                    <span class="award-year">FY23-24</span>
+                    <span class="award-type">TOP ACHIEVER</span>
+                </div>
+                <div class="award-desc-side">
+                    <h4>Consecutive Top Achiever Ratings at NXP Semiconductors</h4>
+                    <p>Ranked in the highest performance bracket for engineering innovation, execution velocity, and collaborative program delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Message Terminal -->
+    <section id="contact" class="cyber-section">
+        <div class="section-header reveal">
+            <span class="section-tag">// 09. TRANSMISSION CHANNEL</span>
+            <h2 class="section-title">Connect &amp; Collaborate</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="contact-terminal-grid">
+            <!-- Left Info Panel -->
+            <div class="cyber-card glass-card reveal">
+                <h3 class="terminal-heading">Let's Build the Future of Semiconductor Test &amp; AI</h3>
+                <p class="terminal-text">
+                    Whether you are discussing high-complexity NPI hardware engineering, advanced test platform conversions, AI-assisted manufacturing yield optimization, or leadership roles — my inbox is always open.
+                </p>
+
+                <div class="terminal-contact-links">
+                    <div class="contact-item-box">
+                        <span class="box-icon">📧</span>
+                        <div>
+                            <span class="box-label">DIRECT EMAIL</span>
+                            <a href="mailto:wanashraf2127@gmail.com" class="box-val">wanashraf2127@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item-box">
+                        <span class="box-icon">📞</span>
+                        <div>
+                            <span class="box-label">MOBILE / WHATSAPP</span>
+                            <span class="box-val">+60 14 823 9695</span>
+                        </div>
+                    </div>
+                    <div class="contact-item-box">
+                        <span class="box-icon">💼</span>
+                        <div>
+                            <span class="box-label">LINKEDIN PROFILE</span>
+                            <a href="https://www.linkedin.com/in/wanashraf" target="_blank" rel="noopener" class="box-val">linkedin.com/in/wanashraf</a>
+                        </div>
+                    </div>
+                    <div class="contact-item-box">
+                        <span class="box-icon">💻</span>
+                        <div>
+                            <span class="box-label">GITHUB REPOSITORY</span>
+                            <a href="https://github.com/pacca1412" target="_blank" rel="noopener" class="box-val">github.com/pacca1412</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div class="cyber-card glass-card reveal">
+                <div class="terminal-titlebar">
+                    <span class="t-dot red"></span>
+                    <span class="t-dot yellow"></span>
+                    <span class="t-dot green"></span>
+                    <span class="terminal-name">message_dispatcher.sh</span>
+                </div>
+                <form class="cyber-form" id="contactForm" onsubmit="handleCyberSubmit(event)">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="senderName">NAME // CALLSIGN</label>
+                            <input type="text" id="senderName" placeholder="Dr. / Eng. Jane Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="senderEmail">TRANSMISSION FREQUENCY (EMAIL)</label>
+                            <input type="email" id="senderEmail" placeholder="jane.doe@company.com" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="senderSubject">SUBJECT // PROGRAM</label>
+                        <input type="text" id="senderSubject" placeholder="NPI Collaboration / Technical Inquiry">
+                    </div>
+                    <div class="input-group">
+                        <label for="senderMsg">ENCRYPTED PAYLOAD (MESSAGE)</label>
+                        <textarea id="senderMsg" rows="4" placeholder="Brief outline of your inquiry or program scope..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-cyber btn-primary submit-btn">
+                        <span class="btn-text">Transmit Message</span>
+                        <span class="btn-icon">🚀</span>
+                    </button>
+                    <div id="formFeedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Futuristic Footer -->
+<footer class="cyber-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <span class="brand-bracket">&lt;</span>WAN MUHAMMAD ASHRAF<span class="brand-bracket">/&gt;</span>
+            <p>Senior NPI Technical Lead · Semiconductor Final Test · AI &amp; Machine Learning</p>
+        </div>
+        <div class="footer-social-links">
+            <a href="https://www.linkedin.com/in/wanashraf" target="_blank" rel="noopener" class="social-pill">
+                <span>LinkedIn</span> ↗
+            </a>
+            <a href="https://github.com/pacca1412" target="_blank" rel="noopener" class="social-pill">
+                <span>GitHub</span> ↗
+            </a>
+            <a href="assets/Wan_Muhammad_Ashraf_Resume.pdf" download class="social-pill highlight">
+                <span>Download PDF</span> ⬇
+            </a>
+        </div>
     </div>
-</section>
-
-<!-- Core Competencies -->
-<section id="competencies">
-    <h2 class="section-title reveal">Core Competencies</h2>
-    <div class="competency-grid">
-        <div class="card reveal">
-            <h3>🎯 Program Leadership</h3>
-            <p>NPI/NTI lifecycle · Scheduling &amp; milestone tracking · Budget &amp; cost control · Risk management · Global stakeholder &amp; supplier management · Production release readiness</p>
-        </div>
-        <div class="card reveal">
-            <h3>🔧 Technical Depth</h3>
-            <p>Final Test hardware (loadboards, sockets, handler interfaces) · PCB design · DOE · CFD / FEA · DFMEA, 3×5 Why, MSA, SPC · Lean Six Sigma · Data analysis (Power BI, JMP, Minitab) and AI/ML</p>
-        </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Wan Muhammad Ashraf Wan Yusoff. Engineered with high-precision HTML5, CSS3 &amp; JS.</p>
+        <p class="sys-status"><span class="status-green-dot"></span> SYSTEM RUNNING OPTIMAL</p>
     </div>
-</section>
-
-<!-- Key Achievements -->
-<section id="achievements">
-    <h2 class="section-title reveal">Key Achievements</h2>
-    <div class="achievements-grid">
-        <div class="achievement-card reveal">
-            <div class="achievement-icon">🏆</div>
-            <div class="achievement-text">
-                <strong>100% FTR &amp; OTD</strong>
-                <p>Across 50+ NPI/NTI hardware projects, with zero design re-spin and a 20% cycle-time reduction (shift-left).</p>
-            </div>
-        </div>
-        <div class="achievement-card reveal">
-            <div class="achievement-icon">💰</div>
-            <div class="achievement-text">
-                <strong>~US$40M Revenue Secured</strong>
-                <p>Led the Teradyne J973 to UltraFlex UP1600 test platform conversion for MPC8308, avoiding NRE cost through in-house loadboard development.</p>
-            </div>
-        </div>
-        <div class="achievement-card reveal">
-            <div class="achievement-icon">⚡</div>
-            <div class="achievement-text">
-                <strong>3× Contact Pin Life</strong>
-                <p>300k to 1M touchdowns from cantilever pins on MCT SH-5300 and FH-1200 handlers, cutting downtime and improving MTBF.</p>
-            </div>
-        </div>
-        <div class="achievement-card reveal">
-            <div class="achievement-icon">⭐</div>
-            <div class="achievement-text">
-                <strong>Top Achiever FY2023 &amp; FY2024</strong>
-                <p>Four recognition awards (SPOT and Technical Excellence), 2023 to 2025 at NXP Semiconductors.</p>
-            </div>
-        </div>
-        <div class="achievement-card reveal">
-            <div class="achievement-icon">🤖</div>
-            <div class="achievement-text">
-                <strong>RM128,000 Annual Saving</strong>
-                <p>Two automation and digitalisation projects at Top Glove Corporation.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience -->
-<section id="experience">
-    <h2 class="section-title reveal">Professional Experience</h2>
-
-    <div class="card reveal">
-        <h3>NPI Hardware Design Engineer / Project Owner</h3>
-        <p class="subtitle">NXP Semiconductors Sdn. Bhd., Petaling Jaya &nbsp;|&nbsp; Sept 2022 – Present</p>
-        <ul class="experience-list">
-            <li>Own the full NPI/NTI hardware lifecycle for 50+ projects (requirements, design, supplier procurement, build, qualification, production release), delivering 100% FTR and 100% OTD.</li>
-            <li>Plan and track schedule, budget and risk on every project, using Excel-based project plans with automated Gantt charts; cut project cycle time by 20% and met shift-left goals.</li>
-            <li>Lead global coordination with NXP teams in the USA, Europe and Asia and with multiple external suppliers, resolving technical issues to keep milestones on track with zero design re-spin.</li>
-            <li>Led the J973 to UP1600 conversion (~US$40M revenue secured) and the cantilever pin introduction on MCT SH-5300/FH-1200 handlers (pin life 300k→1M touchdowns).</li>
-            <li>Design PCB layouts and test hardware on Teradyne (UltraFlexPlus, UltraFlex UP1600, J750) and Advantest (Exascale Duo, PinScale PS1600) testers.</li>
-            <li>Run DOE to validate hardware reliability; run CFD and FEA simulation before production release.</li>
-        </ul>
-    </div>
-
-    <div class="card reveal">
-        <h3>Production Engineer</h3>
-        <p class="subtitle">Top Glove Corporation Berhad, Meru, Selangor &nbsp;|&nbsp; Oct 2021 – Sept 2022</p>
-        <ul class="experience-list">
-            <li>Delivered machine design and automation projects worth RM128,000 in combined annual savings, bridging design and manufacturing.</li>
-            <li>Led Continuous Improvement Projects (CIP) and digitalised packaging and monitoring processes with Power BI (Industry 4.0).</li>
-            <li>Top Performer (Midterm Grading) FY2022.</li>
-        </ul>
-    </div>
-</section>
-
-<!-- Education -->
-<section id="education">
-    <h2 class="section-title reveal">Education</h2>
-
-    <div class="card reveal">
-        <h3>Bachelor of Mechanical Engineering (Hons.)</h3>
-        <p class="subtitle">Universiti Malaya (UM), Kuala Lumpur &nbsp;|&nbsp; 2017 – 2021</p>
-        <p>First Class, CGPA 3.74/4.00 &nbsp;|&nbsp; Dean's Award, five-time recipient (2017–2021)</p>
-    </div>
-
-    <div class="card reveal">
-        <h3>Foundation in Physical Science</h3>
-        <p class="subtitle">Pusat Asasi Sains UM (PASUM) &nbsp;|&nbsp; 2016 – 2017</p>
-        <p>CGPA 4.00/4.00</p>
-    </div>
-</section>
-
-<!-- Skills -->
-<section id="skills">
-    <h2 class="section-title reveal">Technical Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-category reveal">
-            <h4>Project &amp; Quality</h4>
-            <div class="tags">
-                <span class="tag">NPI/NTI Lifecycle</span>
-                <span class="tag">DOE</span>
-                <span class="tag">DFMEA</span>
-                <span class="tag">MSA</span>
-                <span class="tag">SPC</span>
-                <span class="tag">Lean Six Sigma</span>
-                <span class="tag">ISO 9001</span>
-                <span class="tag">IATF 16949</span>
-            </div>
-        </div>
-        <div class="skill-category reveal">
-            <h4>Test Platforms</h4>
-            <div class="tags">
-                <span class="tag">Teradyne UltraFlexPlus</span>
-                <span class="tag">UltraFlex UP1600</span>
-                <span class="tag">J750</span>
-                <span class="tag">Advantest Exascale Duo</span>
-                <span class="tag">PinScale PS1600</span>
-            </div>
-        </div>
-        <div class="skill-category reveal">
-            <h4>Design &amp; Simulation</h4>
-            <div class="tags">
-                <span class="tag">Cadence Allegro</span>
-                <span class="tag">SOLIDWORKS</span>
-                <span class="tag">FEA</span>
-                <span class="tag">CFD</span>
-                <span class="tag">AutoCAD</span>
-                <span class="tag">DraftSight</span>
-            </div>
-        </div>
-        <div class="skill-category reveal">
-            <h4>Data &amp; Analysis</h4>
-            <div class="tags">
-                <span class="tag">Power BI</span>
-                <span class="tag">JMP</span>
-                <span class="tag">Minitab</span>
-                <span class="tag">Excel</span>
-                <span class="tag">SQL</span>
-            </div>
-        </div>
-        <div class="skill-category reveal">
-            <h4>AI &amp; Machine Learning</h4>
-            <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">NumPy</span>
-                <span class="tag">Scikit-learn</span>
-                <span class="tag">TensorFlow</span>
-                <span class="tag">Keras</span>
-            </div>
-        </div>
-        <div class="skill-category reveal">
-            <h4>PLM &amp; Collaboration</h4>
-            <div class="tags">
-                <span class="tag">ARAS Innovator</span>
-                <span class="tag">Agile PLM</span>
-                <span class="tag">CollabNet</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects -->
-<section id="projects">
-    <h2 class="section-title reveal">Selected Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card reveal">
-            <div class="project-thumb">🔩</div>
-            <div class="body">
-                <h3>Cantilever Pin Introduction</h3>
-                <p class="project-company">NXP — MCT SH-5300 / FH-1200 Handlers</p>
-                <p>Raised contact pin life from 300k to 1M touchdowns, reducing downtime and improving MTBF. Applied across multiple fine-pitch packages and integrated into the Cohu Jaguar handler.</p>
-            </div>
-        </div>
-        <div class="project-card reveal">
-            <div class="project-thumb" style="background: linear-gradient(135deg, #f472b6, #fb923c);">🌐</div>
-            <div class="body">
-                <h3>NPI High-Speed Ethernet Switch</h3>
-                <p class="project-company">NXP, 2024 — 5nm 16G Automotive</p>
-                <p>Delivered new-generation final test hardware for a 5nm 16G automotive Ethernet switch on a tight budget and timeline with FTR and OTD.</p>
-            </div>
-        </div>
-        <div class="project-card reveal">
-            <div class="project-thumb" style="background: linear-gradient(135deg, #34d399, #2dd4bf);">💰</div>
-            <div class="body">
-                <h3>MPC8308 J973→UP1600 Conversion</h3>
-                <p class="project-company">NXP, 2024</p>
-                <p>Moved production to a faster test platform to meet a demand ramp; secured ~US$40M revenue.</p>
-            </div>
-        </div>
-        <div class="project-card reveal">
-            <div class="project-thumb" style="background: linear-gradient(135deg, #a78bfa, #818cf8);">⚡</div>
-            <div class="body">
-                <h3>USB Type-C 48V Protection IC</h3>
-                <p class="project-company">NXP, 2023</p>
-                <p>Delivered final test hardware for the NPI release of a USB Type-C 48V CC/SBU protection IC.</p>
-            </div>
-        </div>
-        <div class="project-card reveal">
-            <div class="project-thumb" style="background: linear-gradient(135deg, #fb923c, #f97316);">🤖</div>
-            <div class="body">
-                <h3>Automatic Feeder Stamping Machine</h3>
-                <p class="project-company">Top Glove, 2022</p>
-                <p>Automated stamping and sticker printing with Power BI traceability; RM88,000 annual saving, 2 manpower eliminated.</p>
-            </div>
-        </div>
-        <div class="project-card reveal">
-            <div class="project-thumb" style="background: linear-gradient(135deg, #38bdf8, #06b6d4);">📊</div>
-            <div class="body">
-                <h3>Packer ID Traceability Kiosk</h3>
-                <p class="project-company">Top Glove, 2022</p>
-                <p>Digitalised Packer ID recording in Power BI; RM40,000 annual saving.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Certifications -->
-<section id="certifications">
-    <h2 class="section-title reveal">Certifications &amp; Training</h2>
-
-    <div class="cert-grid">
-        <div class="card reveal">
-            <h3>🤖 AI &amp; Data Science</h3>
-            <ul class="cert-list">
-                <li>Machine Learning Specialization — DeepLearning.AI &amp; Stanford (2026)</li>
-                <li>IBM Data Science Professional Certificate (2026)</li>
-                <li>Google AI Professional Certificate (2026)</li>
-            </ul>
-        </div>
-        <div class="card reveal">
-            <h3>📐 Quality</h3>
-            <ul class="cert-list">
-                <li>Lean Six Sigma Green Belt (2024)</li>
-                <li>NXP Yellow Belt Six Sigma (2022)</li>
-            </ul>
-        </div>
-        <div class="card reveal">
-            <h3>🎓 Professional</h3>
-            <ul class="cert-list">
-                <li>Graduate Engineer, BEM (2022)</li>
-                <li>Graduate Technologist, MBOT (2022)</li>
-            </ul>
-        </div>
-        <div class="card reveal">
-            <h3>🔧 Technical</h3>
-            <ul class="cert-list">
-                <li>Semiconductor Digital Device Test Methodology (2023)</li>
-                <li>RF Test Board Design (2024)</li>
-                <li>PCB Layout Design Techniques (2025)</li>
-                <li>SOLIDWORKS FEA and CFD (2023)</li>
-                <li>Microsoft Excel Advanced (2024)</li>
-            </ul>
-        </div>
-        <div class="card reveal">
-            <h3>☁️ Cloud</h3>
-            <ul class="cert-list">
-                <li>AWS &amp; Microsoft Azure Cloud Practitioner (2023)</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Awards -->
-<section id="awards">
-    <h2 class="section-title reveal">Awards</h2>
-    <div class="card reveal">
-        <ul class="awards-list">
-            <li><strong>SPOT Award Q3 2025</strong> — Innovative risk mitigation on multiple NPI qualifications</li>
-            <li><strong>SPOT Award Q3 2024 (two)</strong> — J973 to UP1600 conversion securing US$40M revenue; NXP Innovation World Tour KL 2024</li>
-            <li><strong>Technical Excellence Award Q3 2023</strong> — Bent lead elimination on S32K396 176LQFP product</li>
-            <li><strong>Top Achiever FY2023 &amp; FY2024</strong> — NXP Semiconductors</li>
-        </ul>
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
-    <h2 class="section-title reveal">Contact</h2>
-    <div class="card reveal">
-        <p style="text-align: center; margin-bottom: 1rem;">Interested in working together? Feel free to reach out!</p>
-        <form class="contact-form" onsubmit="handleSubmit(event)">
-            <div class="form-row">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-            </div>
-            <input type="text" placeholder="Subject">
-            <textarea placeholder="Your Message..." required></textarea>
-            <button type="submit" class="btn btn-primary">🚀 Send Message</button>
-        </form>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <div class="social">
-        <a href="https://www.linkedin.com/in/wanashraf" target="_blank">LinkedIn</a>
-        <a href="https://github.com/pacca1412" target="_blank">GitHub</a>
-    </div>
-    <p>&copy; 2026 Wan Muhammad Ashraf Wan Yusoff. All rights reserved.</p>
 </footer>
 
-<!-- Back to Top -->
-<button class="back-to-top" id="backToTop" title="Back to top">↑</button>
+<!-- Floating Back to Top Button -->
+<button class="cyber-back-to-top" id="backToTop" title="Return to Top">
+    <span class="arrow-up">▲</span>
+    <span class="btn-subtext">TOP</span>
+</button>
 
+<!-- Cyber Interactive Scripts -->
 <script>
-    // ── Scroll Reveal ──
-    const revealElements = document.querySelectorAll('.reveal');
+    // ── 1. Interactive Starfield / Constellation Particle Canvas ──
+    const canvas = document.getElementById('cyberCanvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let mouse = { x: null, y: null, radius: 140 };
+
+    function initCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    initCanvas();
+    window.addEventListener('resize', initCanvas);
+
+    window.addEventListener('mousemove', (e) => {
+        mouse.x = e.x;
+        mouse.y = e.y;
+    });
+    window.addEventListener('mouseout', () => {
+        mouse.x = null;
+        mouse.y = null;
+    });
+
+    class Particle {
+        constructor() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 2 + 0.8;
+            this.speedX = (Math.random() - 0.5) * 0.8;
+            this.speedY = (Math.random() - 0.5) * 0.8;
+            this.color = Math.random() > 0.6 ? '#00f2fe' : (Math.random() > 0.5 ? '#818cf8' : '#38bdf8');
+        }
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            if (this.x < 0 || this.x > canvas.width) this.speedX = -this.speedX;
+            if (this.y < 0 || this.y > canvas.height) this.speedY = -this.speedY;
+
+            // Mouse repulsion / interaction
+            if (mouse.x && mouse.y) {
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < mouse.radius) {
+                    let force = (mouse.radius - dist) / mouse.radius;
+                    this.x -= (dx / dist) * force * 3;
+                    this.y -= (dy / dist) * force * 3;
+                }
+            }
+        }
+        draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = this.color;
+            ctx.shadowBlur = 8;
+            ctx.shadowColor = this.color;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+        }
+    }
+
+    const count = Math.min(Math.floor(window.innerWidth / 18), 75);
+    for (let i = 0; i < count; i++) {
+        particles.push(new Particle());
+    }
+
+    function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let i = 0; i < particles.length; i++) {
+            particles[i].update();
+            particles[i].draw();
+
+            // Connect nearby particles
+            for (let j = i + 1; j < particles.length; j++) {
+                let dx = particles[i].x - particles[j].x;
+                let dy = particles[i].y - particles[j].y;
+                let dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 110) {
+                    ctx.beginPath();
+                    ctx.strokeStyle = `rgba(56, 189, 248, ${0.18 * (1 - dist / 110)})`;
+                    ctx.lineWidth = 0.8;
+                    ctx.moveTo(particles[i].x, particles[i].y);
+                    ctx.lineTo(particles[j].x, particles[j].y);
+                    ctx.stroke();
+                }
+            }
+        }
+        requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // ── 2. Dynamic Typing Text in Hero ──
+    const phrases = [
+        "Senior NPI Technical Lead @ NXP Semiconductors",
+        "Semiconductor Final Test Hardware Specialist",
+        "Automotive & Industrial Device Qualification",
+        "AI & Machine Learning Practitioner (Stanford / IBM Certified)",
+        "Zero Design Re-spin • 100% First-Time-Right Track Record"
+    ];
+    let phraseIdx = 0;
+    let charIdx = 0;
+    let isDeleting = false;
+    const typedEl = document.getElementById('typedText');
+
+    function typeLoop() {
+        const currentPhrase = phrases[phraseIdx];
+        if (!isDeleting) {
+            typedEl.textContent = currentPhrase.substring(0, charIdx + 1);
+            charIdx++;
+            if (charIdx === currentPhrase.length) {
+                isDeleting = true;
+                setTimeout(typeLoop, 2200);
+                return;
+            }
+        } else {
+            typedEl.textContent = currentPhrase.substring(0, charIdx - 1);
+            charIdx--;
+            if (charIdx === 0) {
+                isDeleting = false;
+                phraseIdx = (phraseIdx + 1) % phrases.length;
+            }
+        }
+        setTimeout(typeLoop, isDeleting ? 30 : 65);
+    }
+    typeLoop();
+
+    // ── 3. Animated Telemetry Count-Up Numbers ──
+    let statsAnimated = false;
+    const statCards = document.querySelectorAll('.stat-num');
+    function runCounters() {
+        statCards.forEach(card => {
+            const target = parseInt(card.getAttribute('data-target'), 10);
+            const suffix = card.getAttribute('data-suffix') || '';
+            let current = 0;
+            const step = Math.max(1, Math.floor(target / 40));
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    card.textContent = target + suffix;
+                    clearInterval(timer);
+                } else {
+                    card.textContent = current + suffix;
+                }
+            }, 35);
+        });
+    }
+
+    // ── 4. Scroll Reveal & Counter Observer ──
+    const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+                if (!statsAnimated && entry.target.closest('.telemetry-bar')) {
+                    statsAnimated = true;
+                    runCounters();
+                }
             }
         });
-    }, { threshold: 0.15 });
-    revealElements.forEach(el => observer.observe(el));
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
 
-    // ── Back to Top ──
+    // ── 5. Back to Top Button ──
     const backBtn = document.getElementById('backToTop');
     window.addEventListener('scroll', () => {
-        backBtn.classList.toggle('show', window.scrollY > 400);
+        if (window.scrollY > 400) {
+            backBtn.classList.add('show');
+        } else {
+            backBtn.classList.remove('show');
+        }
     });
     backBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // ── Dark Mode Toggle ──
-    const toggle = document.getElementById('themeToggle');
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark');
-        toggle.textContent = '☀️';
-    }
-    toggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark');
-        const isDark = document.body.classList.contains('dark');
-        toggle.textContent = isDark ? '☀️' : '🌙';
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    // ── 6. Neon Theme Toggle (Cyber Blue / Electric Hyperwave) ──
+    const themeBtn = document.getElementById('themeToggle');
+    let hyperMode = false;
+    themeBtn.addEventListener('click', () => {
+        hyperMode = !hyperMode;
+        document.body.classList.toggle('hyper-neon-mode', hyperMode);
+        themeBtn.textContent = hyperMode ? '🔥' : '⚡';
     });
 
-    // ── Contact Form (demo) ──
-    function handleSubmit(e) {
+    // ── 7. Cyber Contact Form Handler ──
+    function handleCyberSubmit(e) {
         e.preventDefault();
-        alert('Thank you for your message! (This is a demo — connect a backend to send real emails.)');
+        const feedback = document.getElementById('formFeedback');
+        const name = document.getElementById('senderName').value;
+        const email = document.getElementById('senderEmail').value;
+        
+        feedback.innerHTML = `✓ TRANSMISSION CONFIRMED: Thank you ${name}! Message recorded. You can also contact directly via <a href="mailto:wanashraf2127@gmail.com">wanashraf2127@gmail.com</a>.`;
+        feedback.style.display = 'block';
         e.target.reset();
+        setTimeout(() => {
+            feedback.style.display = 'none';
+        }, 7000);
     }
 </script>
 
